@@ -18,6 +18,9 @@
  * 
  * @author Tuxion <team#tuxion.nl>
  * @link   http://tuxion.nl/
+ *
+ * @author Jesús Flores <jesusfloressanjose@gmail.com>
+ * @link   http://github.com/sh4ka
  */
 
 define("READABILITY_VERSION", 0.21);
@@ -284,6 +287,7 @@ class Readability {
         }
 
         $content = mb_convert_encoding($Target->saveHTML(), Readability::DOM_DEFAULT_CHARSET, "HTML-ENTITIES");
+        $content = preg_replace('/\s+/', ' ',$content);
 
         // 多个数据，以数组的形式返回
         return Array(

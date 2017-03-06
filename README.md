@@ -10,12 +10,6 @@ The PHP port of [Readability.js by Arc90](http://code.google.com/p/arc90labs-rea
 * PHP Version >= 5
 * [PHP has builded with DOM(Document Object Model)](http://www.php.net/manual/en/book.dom.php)
 
-
-## Live demo 
-
-http://graceco.de/readability/
-
-
 ## Usage
 
 ```
